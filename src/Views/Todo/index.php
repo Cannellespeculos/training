@@ -49,20 +49,6 @@ ob_start();
             }
 
 
-            // sorting algorithm
-            function bubbleSort(array) {
-                let length = array.length;
-                for (let i = 0; i < length - 1; i++) {
-                    for (let j = 0; j < length - i - 1; j++) {
-                        if (array[j] > array[j + 1]) {
-                            [array[j], array[j + 1]] = [array[j + 1], array[j]]; // Swap
-                        }
-                    }
-                }
-                return array;
-            }
-
-            console.log("Tri à Bulles:", bubbleSort([[23, 86, 97], [23, 42, 51], [21, 74]]));
         })
         .catch(error => console.error('Error:', error));
 </script>

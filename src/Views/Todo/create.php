@@ -42,7 +42,7 @@ ob_start();
         })
             .then(response => response.json())
             .then(data => {
-                // sent user to homepage
+                // send user to homepage
                 location.replace("/");
 
             })
